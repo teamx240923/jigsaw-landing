@@ -1,12 +1,14 @@
 {
-  "name": "dsign",
+  "homepage": "https://github.com/teamx240923/jigsaw-landing",
+  "name": "jigsaw",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.9",
@@ -27,6 +29,7 @@
     "typescript": "5.6.2"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.13"
+    "@types/react-slick": "^0.23.13",
+    "gh-pages": "^6.2.0"
   }
 }

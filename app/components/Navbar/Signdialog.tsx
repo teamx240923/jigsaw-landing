@@ -18,9 +18,9 @@ const Signin = () => {
         <>
             <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:pr-0">
                 <div className='hidden lg:block'>
-                    <button type="button" className='text-lg text-blue font-medium' onClick={openModal}>
+                    {/* <button type="button" className='text-lg text-blue font-medium' onClick={openModal}>
                         Sign In
-                    </button>
+                    </button> */}
                 </div>
             </div>
 

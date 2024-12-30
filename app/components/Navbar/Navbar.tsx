@@ -14,13 +14,23 @@ interface NavigationItem {
     current: boolean;
 }
 
+// const navigation: NavigationItem[] = [
+//     { name: 'Home', href: '/', current: true },
+//     { name: 'Services', href: '#services', current: false },
+//     { name: 'About', href: '#about', current: false },
+//     { name: 'Project', href: '#project', current: false },
+//     { name: 'Help', href: '/', current: false },
+// ]
+
+
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'Services', href: '#services', current: false },
-    { name: 'About', href: '#about', current: false },
-    { name: 'Project', href: '#project', current: false },
-    { name: 'Help', href: '/', current: false },
-]
+  { name: "Home", href: "/", current: true },
+  { name: "Services", href: "#services", current: false },
+  { name: "About", href: "#about", current: false },
+//   { name: "Project", href: "#project", current: false },
+//   { name: "Help", href: "/", current: false },
+];
+
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -46,7 +56,7 @@ const Navbar = () => {
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden h-full w-full lg:block"
+                                    className="hidden lg:block h-14"
                                     src={'/assets/logo/logo.png'}
                                     alt="dsign-logo"
                                 />
@@ -54,7 +64,7 @@ const Navbar = () => {
 
                             {/* LINKS */}
 
-                            <div className="hidden lg:block m-auto">
+                            <div className="hidden lg:block ml-auto items-center">
                                 <div className="flex space-x-4">
                                     {navigation.map((item) => (
                                         <Link
