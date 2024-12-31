@@ -28,7 +28,7 @@ const footer = () => {
           <div className="col-span-4 md:col-span-12 lg:col-span-4">
             <div className="flex items-center mb-8">
               <img
-                src={"/assets/logo/logo.png"}
+                src={"./assets/logo/logo.png"}
                 alt="logo"
                 className="w-20"
               />

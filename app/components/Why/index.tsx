@@ -84,6 +84,7 @@ const Why = () => {
                 alt="iPad-image"
                 width={4000}
                 height={900}
+                unoptimized={true}
               />
             </div>
 
@@ -104,7 +105,7 @@ const Why = () => {
                     <div className="mt-4 flex " key={i}>
                       <div className="rounded-full items-center justify-center bg-circlebg min-w-6 max-h-6">
                         <Image
-                          src="/assets/why/check.svg"
+                          src="./assets/why/check.svg"
                           alt="check-image"
                           width={24}
                           height={24}
@@ -124,7 +125,7 @@ const Why = () => {
                     <div className="mt-4 flex" key={i}>
                       <div className="rounded-full items-center justify-center bg-circlebg min-w-6 max-h-6">
                         <Image
-                          src="/assets/why/check.svg"
+                          src="./assets/why/check.svg"
                           alt="check-image"
                           width={24}
                           height={24}

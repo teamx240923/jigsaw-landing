@@ -51,7 +51,7 @@ const Provide = () => {
                   ipsa quae ab illo inventore veritatis et quasi architecto
                   beatae vitae dicta sunt explicabo
                 </h4>
-                {/* <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Learn more <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link> */}
+                {/* <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Learn more <Image src={'./assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link> */}
               </div>
             </div>
 

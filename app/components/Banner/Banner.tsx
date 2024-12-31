@@ -6,7 +6,10 @@ const Banner = () => {
     return (
       <main>
         <div className="px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl pt-16 sm:pt-20 banner-image">
+          <div
+            className="mx-auto max-w-7xl pt-16 sm:pt-20 banner-image"
+            style={{ backgroundImage: "url('./assets/banner/shapes.svg')" }}
+          >
             <div className="text-center">
               <h1 className="text-4xl font-semibold text-navyblue sm:text-5xl  lg:text-7xl md:4px lh-96">
                 Jigsaw Networks
