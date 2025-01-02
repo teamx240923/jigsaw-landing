@@ -1,9 +1,18 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
+import emailjs from "@emailjs/browser";
 
 const Register = () => {
   let [isOpen, setIsOpen] = useState(false);
+  const form = useRef<HTMLFormElement | null>(null);
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   inquiry: "",
+  //   message: "",
+  //   company: "",
+  // });
 
   const closeModal = () => {
     setIsOpen(false);
@@ -11,6 +20,29 @@ const Register = () => {
 
   const openModal = () => {
     setIsOpen(true);
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(form.current);
+    // setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_kq7wsw8",
+        "template_tgngdd1",
+        form.current as HTMLFormElement,
+        "qWSXDKYAXeZZMw3nj"
+      )
+      .then(
+        (result) => {
+          closeModal();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      )
+      .finally(() => {});
   };
 
   return (
@@ -58,11 +90,11 @@ const Register = () => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+                  <div className="flex min-h-full items-center justify-center px-4 sm:px-6 lg:px-8">
                     <div className="w-full max-w-md space-y-8">
                       <div>
                         <img
-                          className="mx-auto h-12 w-auto"
+                          className="mx-auto h-20 w-auto"
                           src="./assets/logo/logo.png"
                           alt="Your Company"
                         />
@@ -70,7 +102,11 @@ const Register = () => {
                           Contact Us
                         </h2>
                       </div>
-                      <form className="mt-8 space-y-6" action="#" method="POST">
+                      <form
+                        className="mt-8 space-y-6"
+                        ref={form}
+                        onSubmit={sendEmail}
+                      >
                         <input
                           type="hidden"
                           name="remember"

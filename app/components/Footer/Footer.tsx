@@ -27,10 +27,10 @@ const footer = () => {
 
           <div className="col-span-4 md:col-span-12 lg:col-span-4">
             <div className="flex items-center mb-8">
-              <img src={"./assets/logo/logo-white.png"} alt="logo" className="w-20" />
-              <div className="text-white text-xl font-bold ml-3">
+              <img src={"./assets/logo/logo-white.png"} alt="logo" className="h-24" />
+              {/* <div className="text-white text-xl font-bold ml-3">
                 Jigsaw Networks
-              </div>
+              </div> */}
             </div>
             {/* <div className="flex gap-4">
               <Link href="https://facebook.com" className="footer-fb-icons">

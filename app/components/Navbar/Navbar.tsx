@@ -51,12 +51,12 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center">
                                 <img
-                                    className="block h-12 w-40 lg:hidden"
+                                    className="block h-24 lg:hidden"
                                     src={'./assets/logo/logo.png'}
                                     alt="dsign-logo"
                                 />
                                 <img
-                                    className="hidden lg:block h-14"
+                                    className="hidden lg:block h-24"
                                     src={'./assets/logo/logo.png'}
                                     alt="dsign-logo"
                                 />
@@ -64,7 +64,7 @@ const Navbar = () => {
 
                             {/* LINKS */}
 
-                            <div className="hidden lg:block ml-auto items-center">
+                            <div className="hidden lg:flex ml-auto items-center">
                                 <div className="flex space-x-4">
                                     {navigation.map((item) => (
                                         <Link

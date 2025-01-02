@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/teamx240923/jigsaw-landing",
+  "homepage": "https://jigsawnetworks.com",
   "name": "jigsaw",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.9",
     "@heroicons/react": "^2.1.5",
     "@types/node": "22.7.4",
