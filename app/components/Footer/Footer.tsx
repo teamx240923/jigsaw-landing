@@ -21,20 +21,18 @@ const products: ProductType[] = [
 const footer = () => {
   return (
     <div className="bg-darkblue -mt-40">
-      <div className="mx-auto max-w-2xl pt-48 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl pt-32 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           {/* COLUMN-1 */}
 
           <div className="col-span-4 md:col-span-12 lg:col-span-4">
             <div className="flex items-center mb-8">
-              <img
-                src={"./assets/logo/logo.png"}
-                alt="logo"
-                className="w-20"
-              />
-              <div className="text-white text-xl font-bold ml-3">Jigsaw Networks</div>
+              <img src={"./assets/logo/logo-white.png"} alt="logo" className="w-20" />
+              <div className="text-white text-xl font-bold ml-3">
+                Jigsaw Networks
+              </div>
             </div>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Link href="https://facebook.com" className="footer-fb-icons">
                 <Image
                   src={"./assets/footer/facebook.svg"}
@@ -59,7 +57,7 @@ const footer = () => {
                   height={20}
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* CLOUMN-2/3 */}
@@ -87,7 +85,7 @@ const footer = () => {
           {/* CLOUMN-4 */}
 
           <div className="col-span-4 md:col-span-4 lg:col-span-4">
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Image
                 src={"./assets/footer/mask.svg"}
                 alt="mask-icon"
@@ -97,8 +95,8 @@ const footer = () => {
               <h5 className="text-base font-normal text-offwhite">
                 925 Filbert Street Pennsylvania 18072
               </h5>
-            </div>
-            <div className="flex gap-2 mt-10">
+            </div> */}
+            {/* <div className="flex gap-2 mt-10">
               <Image
                 src={"./assets/footer/telephone.svg"}
                 alt="telephone-icon"
@@ -108,7 +106,7 @@ const footer = () => {
               <h5 className="text-base font-normal text-offwhite">
                 + 45 34 11 44 11
               </h5>
-            </div>
+            </div> */}
             <div className="flex gap-2 mt-10">
               <Image
                 src={"./assets/footer/email.svg"}
@@ -117,7 +115,7 @@ const footer = () => {
                 height={24}
               />
               <h5 className="text-base font-normal text-offwhite">
-                info@gmail.com
+                contact@jigsawnetworks.com
               </h5>
             </div>
           </div>

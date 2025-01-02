@@ -73,8 +73,8 @@ const solutions = [
 
 const Why = () => {
   return (
-    <div id="about">
-      <div className="mx-auto max-w-7xl px-4 my-20 sm:py-20">
+    <div id="services">
+      <div className="mx-auto max-w-7xl px-4 mb-20 sm:py-20">
         {solutions.map((solution, idx) => (
           <div className="grid grid-cols-1 lg:grid-cols-2" key={idx}>
             {/* COLUMN-1 */}
@@ -91,10 +91,10 @@ const Why = () => {
             {/* COLUMN-2 */}
 
             <div>
-              <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">
+              <h3 className="text-4xl lg:text-5xl pt-4 font-semibold mt-5 text-center lg:text-start">
                 {solution.title}
               </h3>
-              <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">
+              <h4 className="text-lg pt-4 font-normal text-center text-beach lg:text-start leading-8">
                 {solution.info}
               </h4>
 

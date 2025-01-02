@@ -26,7 +26,7 @@ const Newsletter = () => {
                         <div className="flex gap-0">
                             <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4" placeholder="@enter email-address" autoComplete="off" />
                             <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
-                                <Image src={'/assets/newsletter/plane.svg'} alt="plane-img" width={20} height={20} />
+                                <Image src={'./assets/newsletter/plane.svg'} alt="plane-img" width={20} height={20} />
                             </button>
                         </div>
                     </div>
