@@ -63,7 +63,7 @@ const solutions = [
     image: "./assets/why/track.png",
   },
   {
-    title: "Cloud Infrastructure Simplification (MayaOps)",
+    title: "Cloud Infrastructure Simplification",
     info: "MayaOps simplifies cloud operations with a unified platform for multi-cloud management, one-click deployments, and real-time monitoring. Manage databases, environments, and resources securely, all in one place.",
     features: [
       "Multi-cloud connectivity with AWS, GCP, and Azure",
