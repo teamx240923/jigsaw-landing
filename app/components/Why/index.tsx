@@ -44,10 +44,7 @@ const solutions = [
     //info: "TrackSure transforms event tracking by automating validation and providing a centralized dashboard for seamless management. Replace manual tracking methods and eliminate data discrepancies to focus on insights that matter.Learn more at <a href='https://www.tracksure.io' target='_blank'>www.tracksure.io</a>",
     info: (
       <>
-        TrackSure transforms event tracking by automating validation and providing a centralized dashboard for seamless management. Replace manual tracking methods and eliminate data discrepancies to focus on insights that matter. Learn more at{" "}
-        <a href="https://www.tracksure.io" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-          www.tracksure.io
-        </a>.
+        TrackSure transforms event tracking by automating validation and providing a centralized dashboard for seamless management. Replace manual tracking methods and eliminate data discrepancies to focus on insights that matter.
       </>
     ),
     features: [
